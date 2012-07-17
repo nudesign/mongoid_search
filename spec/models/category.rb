@@ -2,5 +2,5 @@ class Category
   include Mongoid::Document
   field :name
 
-  has_many :products
+  references_many :products
 end
